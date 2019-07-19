@@ -7,6 +7,7 @@ const cookieParser = require("cookie-parser"); // Necesario para que se pueda le
 
 server.use('/', express.static(path.join(__dirname, '/build')));
 server.use('/map', express.static(path.join(__dirname, '/build')));
+server.use('/menu', express.static(path.join(__dirname, '/build')));
 server.use(cookieParser());
 
 
