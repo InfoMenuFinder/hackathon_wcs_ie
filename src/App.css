@@ -1,4 +1,7 @@
   /* App.js CSS   */
+  html {
+    background-color: rgba(51,51,51,.2);
+  }
 .navBar {
   margin: 5px;
 }
