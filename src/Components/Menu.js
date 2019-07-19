@@ -11,7 +11,7 @@ export default class Menu extends Component {
 
     componentDidMount = () => {
         const id = window.location.search.split("=").pop() || 1;
-        fetch('api/menus/' + id)
+        fetch('/api/menus/' + id)
         .then(res => res.json())
         .then(data => {
             this.setState({
