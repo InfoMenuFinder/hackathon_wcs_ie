@@ -107,6 +107,17 @@
   margin: 0;
 }
 
+.menu-coste {
+  float: right;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.menu-imagen {
+  width: 200px;
+  padding-top: 20px;
+}
+
 /* Map Component  */
 .mapContainer {
   height: 40em;

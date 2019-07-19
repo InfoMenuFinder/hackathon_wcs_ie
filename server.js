@@ -40,7 +40,7 @@ server.get('/api/menus', (req, res) => {
 server.get('/api/menus/:id', (req, res) => {
     connection.query('SELECT * FROM menus WHERE id = ?',[req.params.id], (err, results) => {
         // PASO 1: Si hay "err", haz console.log() y manda 500    
-        if (err) {
+        if (err||!results) {
                 res.sendStatus(500)
         }
         // PASO 2: Si el array de results esta vacio, manda 404

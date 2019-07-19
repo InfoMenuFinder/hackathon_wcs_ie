@@ -21,7 +21,7 @@ export default class MapRestaurants extends Component {
             this.setState({
                 menus: data
             });
-            });
+          });
     if(this.mobilecheck()) {
       navigator.geolocation.getCurrentPosition(result => {
         this.setState({
@@ -81,11 +81,9 @@ export default class MapRestaurants extends Component {
                     position
                 }>
               </Marker>
-
-
           </Map>
         )
-      }
+    }
 }
 
 
